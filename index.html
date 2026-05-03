@@ -87,25 +87,27 @@
         </div>
     </div>
 
-    <div id="services" class="flex flex-col items-center">
-        <div class="title">
+    <div id="services" class="flex flex-col items-center pb-12">
+        <div class="title py-5">
             <div class="text">NOS SERVICES</div>
             <div class="deco"></div>
         </div>
-        <div class="container px-36">
+        <div class="container px-36 flex flex-col gap-12">
             <div class="service-category flex justify-center">
                 <div class="left w-3/5">
                     <div class="menu">
                         <div class="dropdown">
-                            <a href="#">
+                            <a href="#" data-srvc="brushing">
                                 <div class="headline flex justify-between">
                                     <div class="text">Brushing</div>
                                     <div class="icon">
-                                        <img src="./img/arrow.svg">
+                                        <img src="./img/arrow.svg" class="w-4 h-4 transition-transform duration-300">
                                     </div>
                                 </div>
+                                <hr>
                             </a>
                             <div class="items flex flex-col">
+                                <!--
                                 <div class="item flex items-center justify-between">
                                     <div class="left">
                                         <div class="title">Brushing wavy</div>
@@ -114,11 +116,36 @@
                                     <div class="right">
                                         <div class="price">60 MAD</div>
                                     </div>
-                                </div>
+                                </div>-->
 
                             </div>
                         </div>
-
+                        <!--Coloration-->
+                        <div class="dropdown">
+                            <a href="#" data-srvc="coloration">
+                                <div class="headline flex justify-between">
+                                    <div class="text">Coloration</div>
+                                    <div class="icon">
+                                        <img src="./img/arrow.svg" class="w-4 h-4 transition-transform duration-300">
+                                    </div>
+                                </div>
+                                <hr>
+                            </a>
+                            <div class="items flex flex-col"></div>
+                        </div>
+                        <!--Soin cheveux-->
+                        <div class="dropdown">
+                            <a href="#" data-srvc="soin-cheveux-extensions">
+                                <div class="headline flex justify-between">
+                                    <div class="text">Soin Cheveux & Extensions</div>
+                                    <div class="icon">
+                                        <img src="./img/arrow.svg" class="w-4 h-4 transition-transform duration-300">
+                                    </div>
+                                </div>
+                                <hr>
+                            </a>
+                            <div class="items flex flex-col"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="right w-2/5 flex flex-col items-center">
@@ -126,8 +153,94 @@
                     <div class="image"></div>
                 </div>
             </div>
+
             <div class="separator"></div>
-            
+
+            <div class="service-category flex justify-center">
+                <div class="right w-2/5 flex flex-col items-center">
+                    <div class="title">Visage</div>
+                    <div class="image"></div>
+                </div>
+                <div class="left w-3/5">
+                    <div class="menu">
+                        <div class="dropdown">
+                            <a href="#" data-srvc="beau-regard-soin-cils">
+                                <div class="headline flex justify-between">
+                                    <div class="text">Beau regard et soin des cils</div>
+                                    <div class="icon">
+                                        <img src="./img/arrow.svg" class="w-4 h-4 transition-transform duration-300">
+                                    </div>
+                                </div>
+                                <hr>
+                            </a>
+                            <div class="items flex flex-col"></div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="#" data-srvc="soin-visage">
+                                <div class="headline flex justify-between">
+                                    <div class="text">Soin visage</div>
+                                    <div class="icon">
+                                        <img src="./img/arrow.svg" class="w-4 h-4 transition-transform duration-300">
+                                    </div>
+                                </div>
+                                <hr>
+                            </a>
+                            <div class="items flex flex-col"></div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="#" data-srvc="atelier-russe">
+                                <div class="headline flex justify-between">
+                                    <div class="text">Atelier Russe</div>
+                                    <div class="icon">
+                                        <img src="./img/arrow.svg" class="w-4 h-4 transition-transform duration-300">
+                                    </div>
+                                </div>
+                                <hr>
+                            </a>
+                            <div class="items flex flex-col"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="service-category flex justify-center">
+                <div class="left w-3/5">
+                    <div class="menu">
+                        <div class="dropdown">
+                            <a href="#" data-srvc="massages">
+                                <div class="headline flex justify-between">
+                                    <div class="text">Massages</div>
+                                    <div class="icon">
+                                        <img src="./img/arrow.svg" class="w-4 h-4 transition-transform duration-300">
+                                    </div>
+                                </div>
+                                <hr>
+                            </a>
+                            <div class="items flex flex-col"></div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="#" data-srvc="hammam">
+                                <div class="headline flex justify-between">
+                                    <div class="text">Hammam</div>
+                                    <div class="icon">
+                                        <img src="./img/arrow.svg" class="w-4 h-4 transition-transform duration-300">
+                                    </div>
+                                </div>
+                                <hr>
+                            </a>
+                            <div class="items flex flex-col"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right w-2/5 flex flex-col items-center">
+                    <div class="title">SPA</div>
+                    <div class="image"></div>
+                </div>
+            </div>
+
         </div>
     </div>
 
