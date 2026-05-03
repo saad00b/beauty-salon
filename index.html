@@ -36,16 +36,16 @@
         </nav>
     </div>
 
-    <div id="hero" class="pl-28 pt-36 pb-32 bg-[url(https://placehold.net/800x600.png)]">
-        <div id="hero-card" class="flex flex-col bg-amber-300 w-100 h-50 p-10 pt-16">
+    <div id="hero" class="pl-28 py-36 bg-[url(https://placehold.net/800x600.png)]">
+        <div id="hero-card" class="flex flex-col bg-white w-100 h-50 p-10 pt-16">
             <div class="title">Beauty Salon X</div>
             <div class="desc">Beauté et bien-être, votre moment privilégié </div>
             <button type="button" class="cta">Réservez Maintenant</button>
         </div>
     </div>
 
-    <div id="about" class="flex flex-col p-10 items-center px-30">
-        <div class="title flex flex-col w-1/6">
+    <div id="about" class="flex flex-col items-center px-30">
+        <div class="title flex flex-col w-1/6 py-10">
             <div class="text">A PROPOS</div>
             <div class="deco"></div>
         </div>
@@ -87,22 +87,26 @@
         </div>
     </div>
 
-    <div id="services">
+    <div id="services" class="flex flex-col items-center">
         <div class="title">
             <div class="text">NOS SERVICES</div>
             <div class="deco"></div>
         </div>
-        <div class="container">
-            <div class="service-category">
-                <div class="left">
+        <div class="container px-36">
+            <div class="service-category flex justify-center">
+                <div class="left w-3/5">
                     <div class="menu">
                         <div class="dropdown">
-                            <div class="headline">
-                                <div class="text">Brushing</div>
-                                <div class="icon"></div>
-                            </div>
-                            <div class="items">
-                                <div class="item">
+                            <a href="#">
+                                <div class="headline flex justify-between">
+                                    <div class="text">Brushing</div>
+                                    <div class="icon">
+                                        <img src="./img/arrow.svg">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="items flex flex-col">
+                                <div class="item flex items-center justify-between">
                                     <div class="left">
                                         <div class="title">Brushing wavy</div>
                                         <div class="duration">40 min.</div>
@@ -117,7 +121,7 @@
 
                     </div>
                 </div>
-                <div class="right">
+                <div class="right w-2/5 flex flex-col items-center">
                     <div class="title">Coiffure</div>
                     <div class="image"></div>
                 </div>
