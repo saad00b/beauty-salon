@@ -7,23 +7,26 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <div id="info-bar font-bold">
-        <div class="address">
-            <div class="icon"></div>
+    <div id="info-bar" class="flex justify-around">
+        <div class="address flex gap-3">
+            <div class="icon">📍</div>
             <div class="text">41 Rue Assilm, Racine, Casablanca 20000</div>
         </div>
-        <div class="phone">
-            <div class="icon"></div>
+        <div class="phone flex gap-3">
+            <div class="icon">📞</div>
             <div class="text">0661 61 09 77</div>
         </div>
-        <div class="email">
-            <div class="icon"></div>
+        <div class="email flex gap-3">
+            <div class="icon">📧</div>
             <div class="text">example@gmail.com</div>
         </div>
     </div>
+
     <div id="header">
-        <div class="logo"></div>
-        <nav>
+        <div class="logo">
+            <img src="./img/site-logo.svg" alt="Company Logo" class="w-80">
+        </div>
+        <nav class="flex justify-end gap-10 pr-50">
             <a href="#">ACCEUIL</a>
             <a href="#">A PROPOS</a>
             <a href="#">GALLERY</a>
@@ -33,38 +36,55 @@
         </nav>
     </div>
 
-    <div id="hero">
-        <div id="hero-card">
-            <div class="title"></div>
-            <div class="desc"></div>
+    <div id="hero" class="pl-28 pt-36 pb-32 bg-[url(https://placehold.net/800x600.png)]">
+        <div id="hero-card" class="flex flex-col bg-amber-300 w-100 h-50 p-10 pt-16">
+            <div class="title">Beauty Salon X</div>
+            <div class="desc">Beauté et bien-être, votre moment privilégié </div>
             <button type="button" class="cta">Réservez Maintenant</button>
         </div>
     </div>
 
-    <div id="about">
-        <div class="title">
+    <div id="about" class="flex flex-col p-10 items-center px-30">
+        <div class="title flex flex-col w-1/6">
             <div class="text">A PROPOS</div>
             <div class="deco"></div>
         </div>
-        <div class="content">
-            <div class="left">
-                <div class="title"></div>
-                <div class="text"></div>
-                <div class="btns">
+        <div class="content flex justify-center items-center gap-5">
+            <div class="left flex-col w-1/2">
+                <div class="title">Beauty Salon X</div>
+                <div class="text">Beauty Salon X est un lieu dédié à la beauté 
+                    et au bien-être. Chaque soin est conçu pour mettre en valeur
+                     la singularité de chaque personne, en utilisant des 
+                     produits haut de gamme et des techniques innovantes. 
+                     Laissez-vous guider par des experts passionnés, prêts à 
+                     vous offrir un service sur mesure dans une atmosphère 
+                     apaisante et luxueuse.</div>
+                <div class="btns flex justify-start gap-5">
                     <button type="button" class="srvc-btn">Services</button>
                     <button type="button" class="cta">Réservez Maintenant</button>
                 </div>
             </div>
-            <div class="right"></div>
+            <div class="right w-1/2">
+                <img src="https://placehold.net/400x400.png" alt="">
+            </div>
         </div>
     </div>
 
-    <div id="gallery">
-        <div class="title">
+    <div id="gallery" class="flex flex-col items-center">
+        <div class="title py-10">
             <div class="text">NOTRE GALLERIE</div>
             <div class="deco"></div>
         </div>
-        <div class="container"></div>
+        <div class="container grid grid-cols-4">
+            <img src="https://placehold.net/400x400.png" alt="gallery image">
+            <img src="https://placehold.net/400x400.png" alt="gallery image">
+            <img src="https://placehold.net/400x400.png" alt="gallery image">
+            <img src="https://placehold.net/400x400.png" alt="gallery image">
+            <img src="https://placehold.net/400x400.png" alt="gallery image">
+            <img src="https://placehold.net/400x400.png" alt="gallery image">
+            <img src="https://placehold.net/400x400.png" alt="gallery image">
+            <img src="https://placehold.net/400x400.png" alt="gallery image">
+        </div>
     </div>
 
     <div id="services">
