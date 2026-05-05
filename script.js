@@ -40,22 +40,23 @@ const services = {
   ]
 };
 
+let arrow = null
 let dropdowns = document.querySelectorAll(".dropdown")
 for (let dropdown of dropdowns) {
     let a = dropdown.firstElementChild 
     a.addEventListener("click", function(event) {
         event.preventDefault();
-        let arrow = a.querySelector(".icon > img")
         
         if (active_cat) {
             document.querySelector(`a[data-srvc='${active_cat}'] + .items`).textContent = ""
+            arrow.classList.toggle('rotate-180')
             if (a.getAttribute("data-srvc") == active_cat) {
                 active_cat = ""
-                arrow.classList.toggle('rotate-180')
                 return;
             }
         }
-        
+
+        arrow = a.querySelector(".icon > img")
         active_cat = a.getAttribute("data-srvc")
         let cat_services = services[active_cat]
         let items = dropdown.querySelector('.items');
