@@ -92,3 +92,25 @@ for (let dropdown of dropdowns) {
 
     })
 }
+
+
+
+let questions = document.querySelectorAll("#faq .item")
+let active_question = null
+//let arrow_question = null
+for (let question of questions) {
+  question.firstElementChild.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (active_question) {
+      active_question.firstElementChild.querySelector(".icon > img").classList.toggle('rotate-180')
+      active_question.querySelector(".answer").classList.toggle('hidden')
+      if (active_question == question) {
+        active_question = null
+        return
+      }
+    }
+    active_question = question
+    question.firstElementChild.querySelector(".icon > img").classList.toggle('rotate-180');
+    question.querySelector(".answer").classList.toggle('hidden')
+  } )
+}
