@@ -9,6 +9,11 @@
     @apply flex gap-3;
 }
 
+/*Header*/
+#header nav > * {
+    @apply p-5;
+}
+
 /*Services*/
 .service-category {
     @apply flex justify-center;
@@ -47,4 +52,14 @@
 }
 .question .icon img {
     @apply w-4 h-4 transition-transform duration-300;
+}
+
+/*Map-Hours*/
+#hours .items .item {
+    @apply flex gap-10 justify-between;
+}
+
+/*Footer*/
+#footer .section2 > * {
+    @apply flex gap-3;
 }
