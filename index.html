@@ -26,7 +26,7 @@
         <div class="logo">
             <img src="./img/site-logo.svg" alt="Company Logo" class="w-60">
         </div>
-        <nav class="flex justify-end pr-40">
+        <nav>
             <a href="#">ACCEUIL</a>
             <a href="#">A PROPOS</a>
             <a href="#">GALLERY</a>
@@ -36,7 +36,7 @@
         </nav>
     </div>
 
-    <div id="hero" class="pl-28 py-36 bg-[url(https://placehold.net/800x600.png)]">
+    <div id="hero" class="pl-28 py-36 bg-[url('/img/hero-img.jpg')] bg-cover">
         <div id="hero-card" class="flex flex-col bg-white w-100 h-50 p-10 pt-16">
             <div class="title">Beauty Salon X</div>
             <div class="desc">Beauté et bien-être, votre moment privilégié </div>
@@ -45,9 +45,9 @@
     </div>
 
     <div id="about" class="flex flex-col items-center px-30">
-        <div class="title flex flex-col w-1/6 py-10">
-            <div class="text">A PROPOS</div>
-            <div class="deco"></div>
+        <div class="section-title flex flex-col w-1/6 py-10 items-center gap-3">
+            <div class="text text-muted font-bold text-xl">A PROPOS</div>
+            <div class="deco"><hr ></div>
         </div>
         <div class="content flex justify-center items-center gap-5">
             <div class="left flex-col w-1/2">
@@ -65,32 +65,32 @@
                 </div>
             </div>
             <div class="right w-1/2">
-                <img src="https://placehold.net/400x400.png" alt="">
+                <img src="/img/about-img.jpg" alt="Owner" width=80%>
             </div>
         </div>
     </div>
 
     <div id="gallery" class="flex flex-col items-center">
-        <div class="title py-10">
+        <div class="section-title py-10">
             <div class="text">NOTRE GALLERIE</div>
-            <div class="deco"></div>
+            <div class="deco"><hr></div>
         </div>
         <div class="container grid grid-cols-4">
-            <img src="https://placehold.net/400x400.png" alt="gallery image">
-            <img src="https://placehold.net/400x400.png" alt="gallery image">
-            <img src="https://placehold.net/400x400.png" alt="gallery image">
-            <img src="https://placehold.net/400x400.png" alt="gallery image">
-            <img src="https://placehold.net/400x400.png" alt="gallery image">
-            <img src="https://placehold.net/400x400.png" alt="gallery image">
-            <img src="https://placehold.net/400x400.png" alt="gallery image">
-            <img src="https://placehold.net/400x400.png" alt="gallery image">
+            <img src="/img/gallerie-1.jpg" alt="gallery image">
+            <img src="/img/gallerie-2.jpg" alt="gallery image">
+            <img src="/img/gallerie-3.jpg" alt="gallery image">
+            <img src="/img/gallerie-4.jpg" alt="gallery image">
+            <img src="/img/gallerie-5.jpg" alt="gallery image">
+            <img src="/img/gallerie-6.jpg" alt="gallery image">
+            <img src="/img/gallerie-7.jpg" alt="gallery image">
+            <img src="/img/gallerie-8.jpg" alt="gallery image">
         </div>
     </div>
 
     <div id="services" class="flex flex-col items-center pb-12">
-        <div class="title py-5">
+        <div class="section-title py-5">
             <div class="text">NOS SERVICES</div>
-            <div class="deco"></div>
+            <div class="deco"><hr></div>
         </div>
         <div class="container px-36 flex flex-col gap-12">
             <div class="service-category">
@@ -150,7 +150,7 @@
                 </div>
                 <div class="right">
                     <div class="title">Coiffure</div>
-                    <div class="image"><img src="https://placehold.net/600x400.png"></div>
+                    <div class="image"><img src="/img/coiffure.jpg"></div>
                 </div>
             </div>
 
@@ -159,7 +159,7 @@
             <div class="service-category">
                 <div class="right">
                     <div class="title">Visage</div>
-                    <div class="image"><img src="https://placehold.net/600x400.png"></div>
+                    <div class="image"><img src="/img/visage.jpg"></div>
                 </div>
                 <div class="left">
                     <div class="menu">
@@ -237,7 +237,7 @@
                 </div>
                 <div class="right">
                     <div class="title">SPA</div>
-                    <div class="image"><img src="https://placehold.net/600x400.png"></div>
+                    <div class="image"><img src="/img/spa.jpg"></div>
                 </div>
             </div>
 
@@ -245,9 +245,9 @@
     </div>
 
     <div id="reviews" class="flex flex-col items-center py-5">
-        <div class="title pb-10">
+        <div class="section-title pb-10">
             <div class="text">TEMOIGNAGE</div>
-            <div class="deco"></div>
+            <div class="deco"><hr></div>
         </div>
         <div class="cards">
             <div class="card">
@@ -268,10 +268,10 @@
         </div>
     </div>
 
-    <div id="faq" class="py-5">
-        <div class="title">
+    <div id="faq" class="py-5 flex flex-col items-center px-30">
+        <div class="section-title">
             <div class="text">FAQ</div>
-            <div class="deco"></div>
+            <div class="deco"><hr></div>
         </div>
         <div class="container">
             <div class="items">

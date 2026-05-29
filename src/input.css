@@ -2,56 +2,56 @@
 
 
 @theme {
-  /* --- Brand Colors --- */
-  --color-primary: #3b82f6;       /* Replace with your main brand color */
-  --color-primary-foreground: #ffffff;
-  
-  --color-secondary: #10b981;     /* Your accent/action color */
-  --color-secondary-foreground: #ffffff;
+  --color-background: #f0dfd7;
+  --color-accent: #bad6e1;
+  --color-muted: #6b7280;
+  --color-second-accent: #6d3def;
+    /*
+    #7d4dff
+    #bad6e1
+    #d9cae1
+    */
+}
 
-  --color-accent: #f59e0b;        /* For highlights or alerts */
-  --color-muted: #f3f4f6;         /* For backgrounds of cards/sections */
-  --color-muted-foreground: #6b7280;
-
-  /* --- Surface Colors --- */
-  --color-background: #ffffff;
-  --color-foreground: #0f172a;
-  --color-border: #e2e8f0;
-
-  /* --- Typography --- */
-  --font-sans: "Inter", ui-sans-serif, system-ui;
-  --font-serif: "Merriweather", ui-serif, Georgia;
-  --font-mono: "Fira Code", ui-monospace, SFMono-Regular;
-
-  /* --- Layout & Effects --- */
-  --radius-xl: 1rem;
-  --radius-lg: 0.75rem;
-  --radius-md: 0.5rem;
-  --radius-sm: 0.25rem;
-  
-  --shadow-brand: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+:root {
+    @apply bg-background;
+    
+}
+.section-title {
+    @apply flex flex-col w-1/6 py-10 items-center gap-3;
+}
+.section-title .text {
+    @apply text-muted font-bold text-xl;
+}
+.section-title hr {
+    @apply w-40 text-muted;
 }
 
 
 
 /*Info Bar*/
 #info-bar {
-    @apply bg-muted py-2 px-4 text-muted-foreground;
+    @apply bg-muted py-2 px-4 text-white;
 }
 #info-bar > * {
     @apply flex gap-3;
 }
-#info-bar .icon {
-    @apply text-primary;
-}
 
 /*Header*/
+#header {
+    display: unset;
+}
+#header nav {
+    @apply flex justify-end pr-40 sticky top-0 font-medium;
+    background-color: rgba(240, 223, 215, 0.6);
+    backdrop-filter: blur(8px);
+}
 #header nav > a {
-    @apply px-5 py-3 transition delay-50 duration-300 hover:text-accent relative;
+    @apply px-5 py-3 transition delay-50 duration-300 hover:text-second-accent relative text-mauve-800;
 }
 
 #header nav > a::after {
-  @apply absolute w-full h-0.5 bottom-0 left-0 bg-accent;
+  @apply absolute w-full h-0.5 bottom-0 left-0 bg-second-accent ;
   content: '';
   transform: scaleX(0);
   transition: transform 0.25s ease-out;
