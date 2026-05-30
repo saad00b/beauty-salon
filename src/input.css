@@ -1,11 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: myFont; 
+  src: url("/cool-font.ttf"); 
+}
 
 @theme {
   --color-background: #f0dfd7;
   --color-accent: #bad6e1;
   --color-muted: #6b7280;
   --color-second-accent: #6d3def;
+  --color-section-title: #2f2438;
     /*
     #7d4dff
     #bad6e1
@@ -18,10 +23,12 @@
     
 }
 .section-title {
-    @apply flex flex-col w-1/6 py-10 items-center gap-3;
+    @apply flex flex-col w-1/2 py-10 items-center gap-3 pt-30;
+    font-family:myFont;
+    letter-spacing: 3px;
 }
 .section-title .text {
-    @apply text-muted font-bold text-xl;
+    @apply text-section-title font-medium text-5xl;
 }
 .section-title hr {
     @apply w-40 text-muted;
@@ -62,37 +69,97 @@
   transform-origin: bottom center;
 }
 
+/*Hero*/
+#hero-card {
+    @apply flex flex-col items-start gap-2 w-120 h-50 p-10 pt-16 text-white;
+    background-color: rgba(107, 114, 128, 0.8);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /*rgba(109, 61, 239, 0.6)*/
+}
+#hero-card button:hover {
+    @apply bg-second-accent;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/*About*/
+#about .title {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    @apply text-section-title;
+}
+#about .btns button {
+    @apply border bg-muted text-white py-2 px-4 cursor-pointer duration-[0.4s];
+}
+#about .btns button:hover {
+    @apply bg-second-accent;
+}
+#about .right img {
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/*Gallery*/
+#gallery .container img {
+    transition-duration: 0.4s;
+}
+#gallery .container img:hover {
+    transform: scale(1.05,1.05);
+}
+
 
 /*Services*/
 .service-category {
-    @apply flex justify-center;
+    @apply flex justify-center gap-3;
 }
 
 .service-category .left {
     @apply w-3/5;
 }
 .service-category .right {
-    @apply w-2/5 flex flex-col items-center;
+    @apply w-2/5 flex flex-col items-center gap-3 text-section-title;
+}
+.service-category .right .title {
+    @apply text-3xl;
+    font-family: 'Times New Roman', Times, serif;
+}
+.service-category .right img {
+    border-radius: 20px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .dropdown .headline {
-    @apply flex justify-between;
+    @apply flex justify-between text-xl pb-3;
+    font-family: 'Times New Roman', Times, serif;
+    color: #6b6378;
 }
 .dropdown .items {
-    @apply flex flex-col;
+    @apply flex flex-col gap-3 pt-3;
 }
 
 .headline .icon img {
-    @apply w-4 h-4 transition-transform duration-300;
+    @apply w-10 transition-transform duration-300;
 }
 
+.service-category .menu {
+    @apply flex flex-col gap-4;
+}
+
+.headline + hr {
+    @apply text-muted opacity-30;
+}
+#services .separator hr {
+    @apply text-second-accent opacity-50;
+}
 
 /*Reviews*/
 .cards {
   @apply flex gap-14 px-20;
 }
 .card {
-  @apply flex flex-col items-center gap-5 text-center;
+  @apply flex flex-col items-center gap-5 text-center bg-white rounded-2xl px-5 py-3 flex-1 text-section-title justify-between;
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card .text {
+    @apply text-2xl;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /*FAQ*/
@@ -100,7 +167,22 @@
     @apply flex justify-between;
 }
 .question .icon img {
-    @apply w-4 h-4 transition-transform duration-300;
+    @apply w-10 transition-transform duration-300;
+}
+#faq .question .text {
+    font-family: 'Times New Roman', Times, serif;
+    color: #6b6378;
+}
+
+/*Contact*/
+#contact .right form > select {
+    appearance: none;
+}
+#contact .right form > * {
+    @apply border border-dashed p-3;
+}
+#contact .right form > button {
+    @apply col-span-2 border-solid bg-second-accent text-white;
 }
 
 /*Map-Hours*/
@@ -109,6 +191,12 @@
 }
 
 /*Footer*/
+#footer {
+    background-color: rgba(255,255,255,0.2);
+}
 #footer .section2 > * {
     @apply flex gap-3;
+}
+#footer button {
+    @apply border bg-second-accent text-white px-5 py-3 cursor-pointer;
 }

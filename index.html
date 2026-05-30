@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salon</title>
+    <title>Beauty Salon X</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
     <div id="info-bar" class="flex justify-around">
         <div class="address">
             <div class="icon">📍</div>
-            <div class="text">41 Rue Assilm, Racine, Casablanca 20000</div>
+            <div class="text">Maarif, Casablanca 20900</div>
         </div>
         <div class="phone">
             <div class="icon">📞</div>
-            <div class="text">0661 61 09 77</div>
+            <div class="text">06 12 34 56 78</div>
         </div>
         <div class="email">
             <div class="icon">📧</div>
@@ -23,8 +23,8 @@
     </div>
 
     <div id="header">
-        <div class="logo">
-            <img src="./img/site-logo.svg" alt="Company Logo" class="w-60">
+        <div class="logo p-5">
+            <img src="./img/site-logo-cropped.svg" alt="Company Logo" class="w-50">
         </div>
         <nav>
             <a href="#">ACCEUIL</a>
@@ -36,11 +36,11 @@
         </nav>
     </div>
 
-    <div id="hero" class="pl-28 py-36 bg-[url('/img/hero-img.jpg')] bg-cover">
-        <div id="hero-card" class="flex flex-col bg-white w-100 h-50 p-10 pt-16">
-            <div class="title">Beauty Salon X</div>
+    <div id="hero" class="pl-40 py-36 bg-[url('/img/hero-img.jpg')] bg-cover">
+        <div id="hero-card">
+            <div class="title text-3xl">Beauty Salon X</div>
             <div class="desc">Beauté et bien-être, votre moment privilégié </div>
-            <button type="button" class="cta">Réservez Maintenant</button>
+            <button type="button" class="cta border py-2 px-4 duration-[0.4s] cursor-pointer">Réservez Maintenant</button>
         </div>
     </div>
 
@@ -51,15 +51,15 @@
         </div>
         <div class="content flex justify-center items-center gap-5">
             <div class="left flex-col w-1/2">
-                <div class="title">Beauty Salon X</div>
-                <div class="text">Beauty Salon X est un lieu dédié à la beauté 
+                <div class="title text-3xl pb-5">Beauty Salon X</div>
+                <div class="text text-muted">Beauty Salon X est un lieu dédié à la beauté 
                     et au bien-être. Chaque soin est conçu pour mettre en valeur
                      la singularité de chaque personne, en utilisant des 
                      produits haut de gamme et des techniques innovantes. 
                      Laissez-vous guider par des experts passionnés, prêts à 
                      vous offrir un service sur mesure dans une atmosphère 
                      apaisante et luxueuse.</div>
-                <div class="btns flex justify-start gap-5">
+                <div class="btns flex justify-start gap-5 pt-3">
                     <button type="button" class="srvc-btn">Services</button>
                     <button type="button" class="cta">Réservez Maintenant</button>
                 </div>
@@ -149,7 +149,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <div class="title">Coiffure</div>
+                    <div class="title">COIFFURE</div>
                     <div class="image"><img src="/img/coiffure.jpg"></div>
                 </div>
             </div>
@@ -158,7 +158,7 @@
 
             <div class="service-category">
                 <div class="right">
-                    <div class="title">Visage</div>
+                    <div class="title">VISAGE</div>
                     <div class="image"><img src="/img/visage.jpg"></div>
                 </div>
                 <div class="left">
@@ -274,7 +274,7 @@
             <div class="deco"><hr></div>
         </div>
         <div class="container">
-            <div class="items">
+            <div class="items flex flex-col gap-3 text-2xl">
                 <div class="item">
                     <a href="#" class="question">
                         <div class="text">Puis-je annuler mon rendez-vous ?</div>
@@ -322,9 +322,9 @@
         </div>
     </div>
 
-    <div id="contact" class="flex gap-10 px-40">
-        <div class="left flex flex-col w-1/3">
-            <div class="title">Contactez-nous</div>
+    <div id="contact" class="flex gap-10 px-40 pt-20">
+        <div class="left flex flex-col w-1/3 gap-4">
+            <div class="title text-4xl text-section-title">Contactez-nous</div>
             <div class="desc">N'hésitez pas à nous contacter pour toute 
                 question concernant nos services, nous reviendrons vers 
                 vous dans les plus brefs délais !</div>
@@ -340,15 +340,15 @@
                     <option value="facials">Facials</option>
                 </select>
                 <textarea name="message" placeholder="Message" class="col-span-2"></textarea>
-                <input type="submit" class="col-span-2" value="Submit">
+                <button type="button">Submit</button>
             </form>
         </div>
     </div>
 
     <div id="map-hours" class="flex py-10">
-        <div id="map"><img src="https://placehold.net/600x400.png"></div>
-        <div id="hours" class="flex flex-col justify-center pl-10">
-            <div class="title">Temps de Travail</div>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26594.849671996555!2d-7.656619305812492!3d33.57009950186256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2e9854fbd49%3A0xcb8dc82bd8575005!2sMa%C3%A2rif%2C%20Casablanca!5e0!3m2!1sen!2sma!4v1780145210459!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="hours" class="flex flex-col justify-center items-center pl-20">
+            <div class="title text-3xl pb-5">Temps de Travail</div>
             <div class="items flex flex-col items-center">
                 <div class="item">
                     <div class="day">Lundi</div>
@@ -382,31 +382,31 @@
         </div>
     </div>
 
-    <div id="footer" class="flex items-center">
-        <div class="section1 w-1/3">
-            <div class="heading"><!-- site logo --></div>
+    <div id="footer" class="flex items-center bg-white p-5 gap-5">
+        <div class="section1 w-2/5">
+            <div class="heading"><img src="/img/site-logo-cropped.svg" alt=""></div>
             <div class="text">Bienvenue chez Beauty Salon X, votre destination de 
                 confiance à Casablanca pour une expérience beauté et bien-être 
                 exceptionnelle. Notre espace est conçu pour offrir à chaque 
                 cliente un moment unique et inoubliable, où chaque détail compte.</div>
             <div class="icons"></div>
         </div>
-        <div class="section2 w-1/3">
-            <div class="heading">Contactez-nous</div>
+        <div class="section2 w-2/5">
+            <div class="heading text-2xl pb-4">Contactez-nous</div>
             <div class="address">
                 <div class="icon">📍</div>
                 <div class="text">41 Rue Assilm, Racine, Casablanca 20000</div>
             </div>
             <div class="phone">
                 <div class="icon">📞</div>
-                <div class="text">0661 61 09 77</div>
+                <div class="text">06 12 34 56 78</div>
             </div>
             <div class="email">
                 <div class="icon">📧</div>
                 <div class="text">example@gmail.com</div>
             </div>
         </div>
-        <div class="section3 w-1/3">
+        <div class="section3 w-1/5">
             <button type="button">Réservez Maintenant</button>
         </div>
     </div>
