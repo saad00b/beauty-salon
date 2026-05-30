@@ -80,6 +80,10 @@
     @apply bg-second-accent;
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
 }
+#hero {
+  background-image: url('../img/hero-img.jpg');
+  background-size: cover;
+}
 
 /*About*/
 #about .title {
